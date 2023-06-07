@@ -18,6 +18,11 @@ h2 {
 	border-radius: 50%;
 }
 
+img {
+    width: 50%;
+    border-radius: 50%;
+}
+
 .tym {
 	display: flex; 
 	flex-wrap: wrap;
@@ -37,15 +42,16 @@ h2 {
 	}
 }
 
-@media (min-width: 768px) {
-	.osoba {
-		flex: 1 1 50%;
-	}
+@media (min-width: 650px) {
+    .osoba {
+        flex: 1 1 calc((100%  / 2) - 20px);
+        margin: 5px;
+    }
 }
 
 @media (min-width: 1024px){
-	.osoba {
-		flex: calc(100/4);
-	}
+    .osoba {
+        flex: 1 1 calc((100% / 4) - 20px);
+        margin: 5px;
+    }
 }
-
